@@ -1,0 +1,53 @@
+.payment-select {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid $primaryColor;
+  border-radius: 10px;
+  padding: 28px 40px;
+  background-color: transparent;
+  @include medium {
+    padding: 20px;
+  }
+  @include small {
+    padding: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  span {
+    color: $primaryColor;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    @include small {
+      font-size: 14px;
+    }
+  }
+  &:hover {
+    text-decoration: none;
+    background-color: #173060;
+    border: 2px solid #173060;
+    span {
+      color: #fff;
+    }
+  }
+}
+.btn-select.active {
+  background-color: #173060;
+  border: 2px solid #173060;
+  cursor: default;
+  pointer-events: none; // 取消點擊事件
+  user-select: none;
+  span {
+    color: #fff;
+  }
+}
