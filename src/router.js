@@ -11,8 +11,7 @@ import Complete from './views/Complete.vue';
 Vue.use(Router);
 
 export default new Router({
-  // 上傳 gitHub 不能用此模式
-  // mode: 'history',
+  mode: 'history',
   // base: process.env.BASE_URL,
   routes: [
     {

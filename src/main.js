@@ -18,6 +18,8 @@ import zh_TW from 'vee-validate/dist/locale/zh_TW';
 Vue.use(Vuex);
 
 Vue.use(VeeValidate);
+
+// 關閉正式環境下的提示功能
 Vue.config.productionTip = false;
 
 Validator.localize('zh_TW', zh_TW);
